@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_97_vikadmin88/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy.Flow</title>
+    
+    <script type="module" crossorigin src="/js_97_vikadmin88/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_97_vikadmin88/assets/preload-helper-8ee20d28.js">
+    <link rel="stylesheet" href="/js_97_vikadmin88/assets/index-3f8fd1f1.css">
+  </head>
+  <body>
+    <header class="page-header">
+  <div class="container page-header-container">
+
+    <nav class="page-nav">
+      <a class="logo-link" href="./index.html">energy.flow</a>
+
+      <button class="open-btn-mobile" type="button" aria-expanded="false" aria-label="Escape">
+        <svg class="open-mobile-menu-icon" width="32" height="16" viewBox="0 0 32 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M28 10.3333H4" stroke="#7E847F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M28 5H4" stroke="#7E847F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <ul class="ul-navigation-list">
+        <li class="ul-list-item">
+          <a class="navigation-link" href="./index.html">Home</a>
+        </li>
+        <li class="ul-list-item">
+          <a class="navigation-link" href="./favorites.html">Favorites</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="ul-icon-list">
+      <li class="li-icon-list">
+        <a href="https://www.facebook.com/goITclub/" target="_blank" class="icon-active" aria-label="facebook link">
+          <svg class="svg-icon" width="28" height="28">
+            <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="li-icon-list">
+        <a href="https://www.instagram.com/goitclub/" target="_blank" class="icon-active" aria-label="instagram link">
+          <svg class="svg-icon" width="28" height="28">
+            <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="li-icon-list">
+        <a href="https://www.youtube.com/c/GoIT" target="_blank" class="icon-active" aria-label="youtube link">
+          <svg class="svg-icon" width="28" height="28">
+            <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</header>
+    <main>
+      <section class="hero">
+  <div class="container hero-container">
+    <div class="hero-wrapper">
+      <div class="tags">
+        <span class="tag">#Sport</span>
+        <span class="tag">#Healthy</span>
+        <span class="tag">#Workout</span>
+        <span class="tag">#Diet</span>
+      </div>
+    </div>
+    <div class="hero-second-wrapper">
+      <h1 class="hero-title">Get <span>Body</span> in shape, Stay healthy</h1>
+      <p class="hero-paragraph">
+        Transform your physique and embrace a healthier lifestyle with our
+        comprehensive fitness and nutrition support.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="quote-home">
+    <div class="container container-quote">
+
+        <div class="quote-of-the-day">
+            <svg class="quote-header-svg-2">
+                <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-inverted-commas"></use>
+            </svg>
+            <div class="quote-header">
+                <svg class="quote-header-svg-1">
+                    <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-man"></use>
+                </svg>
+                <h2 class="quote-header-title">Quote of the day</h2>
+            </div>
+
+            <div class="quote-text-container">
+                <p class="quote-text">A lot of times I find that people who are blessed with the most talent don't
+                    ever develop that attitude, and the ones who aren't blessed in that way are the most competitive
+                    and have the biggest heart.</p>
+                <p class="quote-author">Tom Brady</p>
+            </div>
+        </div>
+
+        <div class="quote-picture"></div>
+
+    </div>
+</section>
+      <section class="exercises">
+  <div class="container">
+    <div class="exercises-inner-container">
+      <h2 class="exercises-title">Exercises</h2>
+
+      <div class="exercises-category-form-container">
+        <div class="exercises-category-container">
+          <button type="button" class="exercises-category-btn exercises-category-btn-active">Muscles</button>
+          <button type="button" class="exercises-category-btn">Body parts</button>
+          <button type="button" class="exercises-category-btn">Equipment</button>
+        </div>
+
+        <form class="exercices-form" name="exercices-form" autocomplete="off">
+          <input class="exercices-form-input" type="text" name="searchstr" placeholder="Search" />
+
+          <div class="exercices-form-btn-container">
+            <button class="exercices-form-clear-btn" type="submit">
+              <svg class="form-clear-svg" width="18" height="18">
+                <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <button class="exercices-form-search-btn" type="submit">
+              <svg class="form-search-svg" width="18" height="18">
+                <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <ul class="exercises-subcategory-list">
+        <div class="loader"></div>
+      </ul>
+
+      <!-- <div class="exercises-subcategory-page-container"></div> -->
+
+      <div id="tui-pagination-container" class="tui-pagination"></div>
+      <div class="loader-pagination"></div>
+    </div>
+  </div>
+</section>
+      
+      <section class="motivation-section">
+    <div class="container">
+        <div class="motivation-container">
+            <div class="motivation-img-container">
+            </div>
+            <div class="motivation-wrap">
+                <div class="motivation-icon-wrap">
+                    <svg class="motivation-icon" width="32" height="32">
+                        <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-dumbbells"></use>
+                    </svg>
+                </div>
+                <h3 class="motivation-sport-title">110 min</h3>
+                <p class="motivation-sport-text">Daily norm of sports</p>
+                <p class="motivation-sport-description">
+                    The World Health Organization recommends at least 150 minutes of
+                    moderate-intensity aerobic physical activity throughout the week for
+                    adults aged 18-64. However, what happens if we adjust that number to 110
+                    minutes every day?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="section footer">
+
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-top">
+
+                <div class="footer-part">
+                    <a href="./index.html" class="footer-logo">energy.flow</a>
+                    <ul class="footer-social-links">
+                        <li class="footer-social-item">
+                            <a href="https://www.facebook.com/goITclub/ " class="footer-social-link" target="_blank">
+                                <svg class="footer-social-icon" width="44" height="44">
+                                    <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="https://www.instagram.com/goitclub/ " class="footer-social-link" target="_blank">
+                                <svg class="footer-social-icon" width="44" height="44">
+                                    <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="https://www.youtube.com/c/GoIT" class="footer-social-link" target="_blank">
+                                <svg class="footer-social-icon" width="44" height="44">
+                                    <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-title">
+                    Transforming your <span class="accent-title">body</span> shape with us
+                </p>
+                <div class="footer-subscribe">
+                    <p class="subscribe-title">Subscribe and learn about new exercises!</p>
+                    <form class="footer-form">
+                        <label for="email">
+                            <input class="footer-input" type="email" id="email" name="email" placeholder="Email"
+                                pattern="^\w+(\.\w+)?@[a-zA-Z_0-9]+?\.[a-zA-Z]{2,7}$" />
+                        </label>
+                        <button type="submit" class="subscribe-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-security">
+                <p class="footer-text">Energy Flow. All rights reserved</p>
+                <div class="links-container">
+                    <a href="#">Privacy Policy</a>
+                    <span>/</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="backdrop-modal visually-hidden">
+  <div class="modal">
+    <div class="loader-modal"></div>
+  </div>
+</div>
+    <div class="backdrop-rating visually-hidden">
+  <div class="rating-modal">
+    <form class="rating-form">
+      <button type="button" class="close">
+        <svg class="close-icon" width="12" height="12" viewBox="0 0 14 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.8332 1.16666L1.1665 12.8333M1.1665 1.16666L12.8332 12.8333" stroke="#1B1B1B" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <p class="rating-text">Rating</p>
+
+      <div class="rating-value-container">
+        <p class="rating-value">0.0</p>
+
+        <ul class="rating-star-list">
+          <li class="rating-star-item">
+            <label>
+              <input type="radio" name="rating" class="rating-star-radio" value="1" />
+
+              <svg class="rating-star-icon" width="24" height="24" viewBox="0 0 20 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
+                  fill="rgba(27, 27, 27, 0.20)" />
+              </svg>
+            </label>
+          </li>
+
+          <li class="rating-star-item">
+            <label>
+              <input type="radio" name="rating" class="rating-star-radio" value="2" />
+
+              <svg class="rating-star-icon" width="24" height="24" viewBox="0 0 20 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
+                  fill="rgba(27, 27, 27, 0.20)" />
+              </svg>
+            </label>
+          </li>
+
+          <li class="rating-star-item">
+            <label>
+              <input type="radio" name="rating" class="rating-star-radio" value="3" />
+
+              <svg class="rating-star-icon" width="24" height="24" viewBox="0 0 20 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
+                  fill="rgba(27, 27, 27, 0.20)" />
+              </svg>
+            </label>
+          </li>
+
+          <li class="rating-star-item">
+            <label>
+              <input type="radio" name="rating" class="rating-star-radio" value="4" />
+
+              <svg class="rating-star-icon" width="24" height="24" viewBox="0 0 20 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
+                  fill="rgba(27, 27, 27, 0.20)" />
+              </svg>
+            </label>
+          </li>
+
+          <li class="rating-star-item">
+            <label>
+              <input type="radio" name="rating" class="rating-star-radio" value="5" />
+
+              <svg class="rating-star-icon" width="24" height="24" viewBox="0 0 20 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
+                  fill="rgba(27, 27, 27, 0.20)" />
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <input type="email" placeholder="Email" name="email" class="rating-input"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_0-9]+?\.[a-zA-Z]{2,7}$" required />
+
+      <textarea placeholder="Your comment" name="comment" class="rating-input rating-textarea" required></textarea>
+
+      <button type="submit" class="rating-btn">Send</button>
+    </form>
+  </div>
+</div>
+    <button class="scroll-up-button scroll-up-button-active">
+  <svg class="arrow" width="30" height="30">
+    <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-arrow-top"></use>
+  </svg>
+</button>
+    <div class="backdrop">
+  <div class="modal-window-mob">
+    <div class="link-logo-btn-close-mob">
+      <a class="link-logo-mob-menu" href="./index.html">energy.flow</a>
+      <button class="btn-close-mob" type="button">
+        <svg class="icon-btn-close-mob" width="20" height="20">
+          <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="link-home-favorites">
+      <a class="link-home first-link-home" href="./index.html">Home</a>
+      <a class="link-home link-favorites" href="./favorites.html">Favorites</a>
+    </div>
+    <ul class="list-icon-mob">
+      <li class="mob-menu-icon">
+        <a target="_blank" href="https://www.facebook.com/goITclub/">
+          <svg class="icon-mob-menu-social" width="40" height="40">
+            <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mob-menu-icon">
+        <a target="_blank" href="https://www.instagram.com/goitclub/">
+          <svg class="icon-mob-menu-social" width="40" height="40">
+            <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mob-menu-icon">
+        <a target="_blank" href="https://www.youtube.com/c/GoIT">
+          <svg class="icon-mob-menu-social" width="40" height="40">
+            <use href="/js_97_vikadmin88/assets/icons-84da4e8c.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    
+  </body>
+</html>
